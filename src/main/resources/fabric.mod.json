@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "treesplus",
+  "version": "${version}",
+
+  "name": "Trees Plus",
+  "description": "This mod is similar to Consistency+, but adds logs, leaves and natural tree generation, based on real life wood types.",
+  "authors": [
+    "GrupoEMQSA!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "The Unlicense",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.grupoemqsa.treesplus.TreesPlus"
+    ],
+    "client": [
+      "net.grupoemqsa.treesplus.TreesPlusClient"
+    ]
+  },
+  "mixins": [
+    "treesplus.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
